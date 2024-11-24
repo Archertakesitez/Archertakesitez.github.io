@@ -6,17 +6,26 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 project-item">
-            <style>
+        <style>
+                        /* Light blue box containing everything */
+            .light-blue-box {
+                background-color: #E3F2FD; /* Light blue background */
+                padding: 20px; /* Space inside the box */
+                border-radius: 10px; /* Rounded corners for a softer look */
+                margin-bottom: 20px; /* Space below the box */
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+            }
+
+            /* Project title in a darker blue box */
             .project-title {
                 display: inline-block; /* Makes the box only as wide as the text */
-                background-color: #007BFF; /* Blue background */
+                background-color: #007BFF; /* Dark blue background */
                 color: white; /* White text */
-                padding: 10px 15px; /* Add padding inside the box */
-                border-radius: 5px; /* Optional: Rounded corners */
-                font-weight: bold; /* Make the text bold */
+                padding: 10px 15px; /* Padding inside the title box */
+                border-radius: 5px; /* Rounded corners for the title box */
+                font-weight: bold; /* Make the title bold */
                 font-size: 1.2em; /* Adjust font size */
-                margin-bottom: 10px; /* Add spacing below */
+                margin-bottom: 10px; /* Space below the title */
                 text-align: left; /* Text alignment inside the box */
             }
 
@@ -28,7 +37,28 @@
             .project-title a:hover {
                 color: #d4eaff; /* Lighter blue for hover effect */
             }
-            </style>
+
+            /* Date styling */
+            .project-date {
+                font-size: 1em; /* Slightly smaller than the title */
+                color: #555; /* Neutral gray for dates */
+                margin-bottom: 10px; /* Space below the date */
+            }
+
+            /* List styling */
+            .light-blue-box ul {
+                padding-left: 20px; /* Indent bullet points */
+                margin: 0;
+                list-style-type: disc; /* Standard bullet points */
+            }
+
+            .light-blue-box li {
+                font-size: 1em; /* Standard readable size */
+                line-height: 1.5; /* Adds spacing between lines for readability */
+                color: #333; /* Dark gray for text */
+            }
+        </style>
+        <div class="col-sm-12 project-item light-blue-box">
             <h2 class="project-title">
                 <a href="https://github.com/Archertakesitez/deck-to-CPT" target="_blank">Deck-to-CPT: AI-Driven Reimbursement Code Discovery for HealthTech Start-Ups</a>
             </h2>
@@ -43,6 +73,7 @@
             <h2>
                 <a href="https://github.com/Archertakesitez/Fixplainer" target="_blank">Fixplainer: Failure Explainer for Multiple Object Tracking (MOT)</a>
             </h2>
+            <h3><em>Spring 2024</em></h3>
             <ul>
                 <li>Created a GUI tool that can extract features and then generate various SHAP explanation plots for the objects in a multiple object tracking (MOT) task video frame, elucidating why the objects are successfully or unsuccessfully tracked</li>
                 <li>Applied YOLOv8 and BoT-SORT as object detection and object tracking tools on video datasets to create training sets</li>
@@ -52,6 +83,7 @@
             <h2>
                 <a href="/static/assets/papers/GraphBERT.pdf" target="_blank">GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media</a>
             </h2>
+            <h3><em>Nov.2021 – Jun. 2022</em></h3>
             <ul>
                 <li>Participated in designing a model that focuses on detecting malicious tweets and users using both semantic information encoded by transformers (i.e., BERT) and relational information encoded by graph neural networks (GNNs)</li>
                 <li>Preprocessed datasets obtained from the Internet, including dealing with wrong and incomplete data rows, labeling the data, and performing exploratory data analysis to ensure fair representation of an entire population</li>
@@ -59,8 +91,9 @@
         </div>
         <div class="col-sm-12 project-item">
             <h2>
-                <a href="/static/assets/papers/Representation_learning.pdf" target="_blank">Project 2</a>
+                <a href="/static/assets/papers/Representation_learning.pdf" target="_blank">Fair Graph Representation Learning via Diverse Mixture-of-Experts</a>
             </h2>
+            <h3><em>Jun. 2022 – Oct. 2022</em></h3>
             <p>This is a brief description of Project 2.</p>
         </div>
         <div class="col-sm-12 project-item">
