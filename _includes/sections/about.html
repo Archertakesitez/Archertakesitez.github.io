@@ -29,27 +29,26 @@
                 <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
                 <h2><span>{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                 <ul class="list-inline social-icon">
-                    {% if site.author.github_username %}
                     <li>
                         <a href="https://github.com/{{ site.author.github_username }}" target="blank">
-                            <i class="fa fa-github"></i>
+                            GitHub Page
                         </a>
                     </li>
-                    {% endif %}
-                    {% if site.author.linkedin_id %}
                     <li>
                         <a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" target="blank">
-                            <i class="fa fa-linkedin"></i>
+                            LinkedIn Profile
                         </a>
                     </li>
-                    {% endif %}
-                    {% if site.author.cv %}
                     <li>
-                        <a href="{{ site.author.cv }}" target="blank">
-                            <i class="fa fa-file-pdf-o"></i>
+                        <a href="{{ site.author.SWE_cv }}" target="blank">
+                            Software Engineer CV
                         </a>
                     </li>
-                    {% endif %}
+                    <li>
+                        <a href="{{ site.author.DS_cv }}" target="blank">
+                            Data Scientist/Machine Learning CV
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
