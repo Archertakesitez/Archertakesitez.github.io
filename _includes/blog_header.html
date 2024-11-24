@@ -44,3 +44,22 @@
 {% if site.blog_carousel %}
 {% include carousel.html %}
 {% endif %}
+<style>
+.navbar-nav li {
+    display: inline-block; /* Ensures horizontal alignment */
+    background-color: #007BFF; /* Blue background for the box */
+    border-radius: 5px; /* Optional: Rounded corners for the box */
+    margin: 5px; /* Spacing between tags */
+    padding: 5px 10px; /* Padding inside the box */
+}
+
+.navbar-nav li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+
+.navbar-nav li a:hover {
+    color: #d4eaff; /* Lighter blue on hover */
+}
+</style>
