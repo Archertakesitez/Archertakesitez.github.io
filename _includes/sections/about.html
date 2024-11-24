@@ -67,15 +67,20 @@
 
                         /* Responsive design for smaller screens */
                         @media (max-width: 1100px) {
-                            .blue-box {
-                                width: 100%; /* Each box takes the full width of the container */
-                                padding: 10px; /* Adjust padding for smaller screens */
-                                margin: 5px 0; /* Add vertical spacing between boxes */
-                            }
+                            .team-member ul {
+        justify-content: space-around; /* Spreads items evenly on smaller screens */
+    }
 
-                            .blue-box a {
-                                font-size: 14px; /* Reduce font size for better fit */
-                            }
+    .blue-box {
+        flex: 1 1 calc(50% - 10px); /* Each box takes about 50% of the row, minus margin */
+        margin: 5px; /* Adds spacing between boxes */
+        padding: 10px 15px; /* Maintains consistent padding */
+        max-width: 200px; /* Optional: Prevents overly wide boxes */
+    }
+
+    .blue-box a {
+        font-size: 14px; /* Slightly smaller font for smaller screens */
+    }
                         }
                         </style>
                         <li class="blue-box">
