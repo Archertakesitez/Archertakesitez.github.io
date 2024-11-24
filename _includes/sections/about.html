@@ -2,7 +2,15 @@
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="about_me.about_me">About Me</span></h1>
+            <h1>
+                <span data-i18n="about_me.about_me">About Me</span>
+                <br>
+                <span style="font-size: smaller;">
+                    <i class="fa fa-phone"></i> 123-456-7890
+                    &nbsp;&nbsp; <!-- Add spacing -->
+                    <i class="fa fa-envelope-o"></i> ez806@nyu.edu
+                </span>
+            </h1>
             <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
         </div>
     </div>
@@ -37,28 +45,6 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.author.facebook_username %}
-                    <li>
-                        <a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.author.twitter_username %}
-                    <li>
-                        <a href="https://twitter.com/{{ site.author.twitter_username }}" target="blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.author.email %}
-                    <li>
-                        <button id="reveal-email" class="email-icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </button>
-                        <span id="email-text" style="display: none;">{{ site.author.email }}</span>
-                    </li>
-                    {% endif %}
                     {% if site.author.cv %}
                     <li>
                         <a href="{{ site.author.cv }}" target="blank">
@@ -86,9 +72,3 @@
         </div>
     </div>
 </div>
-<script>
-    document.getElementById("reveal-email").addEventListener("click", function () {
-        const emailText = document.getElementById("email-text");
-        emailText.style.display = "inline"; // Show the email text
-    });
-</script>
