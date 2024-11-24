@@ -8,10 +8,13 @@
     - Incorporated LLMs (Large Language Models) into a chat GUI via Python and JavaScript
     - Developed a Cypher query parser with ANTLR in Python, incorporating Named Entity Recognition (NER) and vector search to validate and enhance Cypher queries, enabling advanced search capabilities in Neo4j graph databases
     - Debugged and improved Kineviz's graph visualization tool (GraphXR) using Azure virtual machines
+    - Built a website leveraging FastAPI that employs LLMs to translate plain texts into user-defined JSON schemas
     i18n: company_a_desc
   date:
-    detail: Jun. 2024 – Present
+    detail: Jun. 2024 – Present, San Francisco, CA (Remote)
     i18n: company_a_date
+  place:
+    detail: San Francisco, CA (remote)
   job:
     detail: Data Analytics Intern
     i18n: company_a_job
@@ -19,10 +22,12 @@
   present: true
 
 - name:
-    detail: Company B
+    detail: Liangyouyinli Technology Co., Ltd
     i18n: company_b
   desc:
-    detail: I worked at Company B ...
+    detail:
+    - Utilized PyTorch to implement convolutional neural networks (CNN) for stock price prediction in China’s stock market
+    - Through backtesting, evaluated our models by checking whether the selected top five stocks made gains in a designated time frame (3 or 5 days), concluding that the models predict with an accuracy of approximately 75%
     i18n: company_b_desc
   date:
     detail: Jun. 2015
