@@ -38,3 +38,40 @@
     detail: Data Scientist Intern
     i18n: company_b_job
   icon: fa-plus-square
+
+- name:
+    detail: YUSUR Technology Co., Ltd
+    i18n: company_b
+  desc:
+    detail:
+    - Utilized Apache Spark and implemented Shell and Python scripts to process the Iris dataset on distributed and parallel systems, benchmarking the performance of our self-developed Kernel Processing Unit (KPU)
+    - Automated data pipelines in Python to preprocess and clean data using Prefect and Mage
+    - Visualized our findings with D3.js, Matplotlib, and Seaborn, and made presentations using these data visualizations
+    i18n: company_b_desc
+  date:
+    detail: May. 2021 – Aug. 2021
+    i18n: company_b_date
+  place:
+    detail: Beijing, China
+  job:
+    detail: Software Development Engineer Intern
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: State Key Laboratory of Software Development Environment, Beihang University
+    i18n: company_b
+  desc:
+    detail:
+    - Queried datasets from SQL databases (MySQL, PostgreSQL) and NoSQL database (MongoDB) 
+    - Designed HTML, CSS, and JavaScript scripts to improve the functionality of webpages, developing test cases to ensure all corner cases have been covered
+    i18n: company_b_desc
+  date:
+    detail: Dec. 2020 – Feb. 2021
+    i18n: company_b_date
+  place:
+    detail: Beijing, China
+  job:
+    detail: Software Development Engineer Intern
+    i18n: company_b_job
+  icon: fa-plus-square
