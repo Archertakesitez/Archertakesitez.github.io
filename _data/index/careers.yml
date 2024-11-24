@@ -7,7 +7,7 @@
     detail:  
     - Incorporated LLMs (Large Language Models) into a chat GUI via Python and JavaScript
     - Developed a Cypher query parser with ANTLR in Python, incorporating Named Entity Recognition (NER) and vector search to validate and enhance Cypher queries, enabling advanced search capabilities in Neo4j graph databases
-    - •	Debugged and improved Kineviz's graph visualization tool (GraphXR) using Azure virtual machines
+    - Debugged and improved Kineviz's graph visualization tool (GraphXR) using Azure virtual machines
     i18n: company_a_desc
   date:
     detail: Jun. 2024 – Present
