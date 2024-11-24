@@ -8,20 +8,21 @@
     <div class="row">
         <div class="col-sm-12 project-item">
             <style>
-                .project-title {
+            .project-title {
+                display: inline-block; /* Makes the box only as wide as the text */
                 background-color: #007BFF; /* Blue background */
                 color: white; /* White text */
-                padding: 10px 15px; /* Add padding for spacing inside the box */
+                padding: 10px 15px; /* Add padding inside the box */
                 border-radius: 5px; /* Optional: Rounded corners */
-                text-align: center; /* Center-align the text */
                 font-weight: bold; /* Make the text bold */
-                font-size: 1.2em; /* Adjust font size as needed */
-                margin-bottom: 10px; /* Add spacing below the box */
+                font-size: 1.2em; /* Adjust font size */
+                margin-bottom: 10px; /* Add spacing below */
+                text-align: left; /* Text alignment inside the box */
             }
 
             .project-title a {
                 text-decoration: none; /* Remove underline from the link */
-                color: white; /* Ensure link text is also white */
+                color: white; /* Ensure link text is white */
             }
 
             .project-title a:hover {
@@ -49,9 +50,12 @@
         </div>
         <div class="col-sm-12 project-item">
             <h2>
-                <a href="/static/assets/papers/GraphBERT.pdf" target="_blank">Project 1</a>
+                <a href="/static/assets/papers/GraphBERT.pdf" target="_blank">GraphBERT: Bridging Graph and Text for Malicious Behavior Detection on Social Media</a>
             </h2>
-            <p>This is a brief description of Project 1.</p>
+            <ul>
+                <li>Participated in designing a model that focuses on detecting malicious tweets and users using both semantic information encoded by transformers (i.e., BERT) and relational information encoded by graph neural networks (GNNs)</li>
+                <li>Preprocessed datasets obtained from the Internet, including dealing with wrong and incomplete data rows, labeling the data, and performing exploratory data analysis to ensure fair representation of an entire population</li>
+            </ul>
         </div>
         <div class="col-sm-12 project-item">
             <h2>
