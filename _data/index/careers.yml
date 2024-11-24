@@ -57,6 +57,7 @@
     detail: Software Development Engineer Intern
     i18n: company_b_job
   icon: fa-plus-square
+  present: true
 
 - name:
     detail: State Key Laboratory of Software Development Environment, Beihang University
