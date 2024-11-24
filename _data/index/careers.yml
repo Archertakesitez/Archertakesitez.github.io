@@ -30,9 +30,11 @@
     - Through backtesting, evaluated our models by checking whether the selected top five stocks made gains in a designated time frame (3 or 5 days), concluding that the models predict with an accuracy of approximately 75%
     i18n: company_b_desc
   date:
-    detail: Jun. 2015
+    detail: May. 2023 – Aug. 2023
     i18n: company_b_date
+  place:
+    detail: Beijing, China
   job:
-    detail: Full Stack Developer
+    detail: Data Scientist Intern
     i18n: company_b_job
   icon: fa-plus-square
