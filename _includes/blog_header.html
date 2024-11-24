@@ -36,17 +36,19 @@
 {% endif %}
 <style>
 .navbar-nav li {
-    display: inline-block; /* Ensures horizontal alignment */
+    display: inline-flex; /* Adjusts box size to fit text more closely */
     background-color: #007BFF; /* Blue background for the box */
     border-radius: 5px; /* Optional: Rounded corners for the box */
     margin: 5px; /* Spacing between tags */
-    padding: 5px 10px; /* Padding inside the box */
+    padding: 2px 8px; /* Smaller padding to reduce box size */
+    align-items: center; /* Vertically centers text inside the box */
 }
 
 .navbar-nav li a {
     color: white; /* White text */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make the text bold */
+    font-size: 14px; /* Adjust font size for balance */
 }
 
 .navbar-nav li a:hover {
