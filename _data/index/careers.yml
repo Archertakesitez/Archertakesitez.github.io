@@ -1,16 +1,19 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
+    detail: Kineviz Inc.
     i18n: company_a
   desc:
-    detail: I worked at Company A ...
+    detail:  
+    - Incorporated LLMs (Large Language Models) into a chat GUI via Python and JavaScript
+    - Developed a Cypher query parser with ANTLR in Python, incorporating Named Entity Recognition (NER) and vector search to validate and enhance Cypher queries, enabling advanced search capabilities in Neo4j graph databases
+    - •	Debugged and improved Kineviz's graph visualization tool (GraphXR) using Azure virtual machines
     i18n: company_a_desc
   date:
-    detail: Apr. 2016
+    detail: Jun. 2024 – Present
     i18n: company_a_date
   job:
-    detail: CTO
+    detail: Data Analytics Intern
     i18n: company_a_job
   icon: fa-plus-square
   present: true
