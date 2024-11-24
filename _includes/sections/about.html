@@ -28,8 +28,15 @@
             <div class="team-member wow zoomIn">
                 <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
                 <h2><span>{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
-                    <ul>
+                    <ul class="list-inline">
                         <style>
+                            .list-inline {
+                                display: flex;              /* Use Flexbox to arrange items in a row */
+                                gap: 10px;                  /* Add spacing between items */
+                                padding: 0;                 /* Remove default padding */
+                                margin: 0;                  /* Remove default margin */
+                                list-style: none;           /* Remove default list styling */
+                            }
                             .blue-box {
                                 display: inline-block;
                                 margin: 5px;
