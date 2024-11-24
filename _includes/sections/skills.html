@@ -31,15 +31,8 @@
             options: {
                 scale: {
                     responsive: true,
-                    ticks: {min: 0, max: 100},
                     lineArc: false,
-                    pointLabels: {
-                    font: { size: 12 },
-                    callback: function(label) {
-                        // Rotate the labels for smaller screens
-                        return window.innerWidth <= 768 ? label.split("").join("\n") : label;
-                    }
-                }
+                    pointLabels: {fontSize: 14},
                 },
                 legend: {display: false},
             }
