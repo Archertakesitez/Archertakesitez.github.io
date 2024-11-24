@@ -26,7 +26,8 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: Introduce myself will be here.  # Describe yourself.
+  desc: Hi there — this is Erchi Zhang, and you can call me Archer. I am pursuing an M.S. in Data Science at New York University, with an expected graduation date of May 2025. I have a strong foundation in programming languages like Python, Java, R, SQL, HTML/CSS, and JavaScript, and I have experience working with data structures as well as algorithms during coursework, academic projects, research papers, and internships. I am also an enthusiast in Machine Learning and Deep Learning. I am actively seeking 2025 new grad opportunities in data science, software development engineering, machine learning, data analysis, or any relevant field.
+# Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
@@ -38,11 +39,11 @@ disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your c
 #   id: UA-93473370-3
 
 ## google optimize
-go:
+# go:
   # id:
 
 ## growingIO
-gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+# gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
   # id:
 
 ## donation
