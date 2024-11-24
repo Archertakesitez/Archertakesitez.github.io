@@ -30,34 +30,35 @@
                 <h2><span>{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                     <ul class="list-inline">
                         <style>
-                            .list-inline {
-                                display: flex;              /* Use Flexbox to arrange items in a row */
-                                gap: 10px;                  /* Add spacing between items */
-                                padding: 0;                 /* Remove default padding */
-                                margin: 0;                  /* Remove default margin */
-                                list-style: none;           /* Remove default list styling */
-                            }
-                            .blue-box {
-                                display: inline-block;
-                                margin: 5px;
-                                padding: 10px 15px;
-                                background-color: #007BFF;
-                                border-radius: 5px;
-                                text-align: center;
-                            }
-                    
-                            .blue-box a {
-                                text-decoration: none;
-                                color: white;
-                                font-size: 16px;
-                                font-weight: bold;
-                            }
-                    
-                            .blue-box a:hover {
-                                background-color: #0056b3;
-                                color: #ffffff;
-                                text-decoration: none;
-                            }
+                           .list-inline {
+    display: flex;              /* Use Flexbox to arrange items in a row */
+    gap: 10px;                  /* Add spacing between items */
+    padding: 0;                 /* Remove default padding */
+    margin: 0;                  /* Remove default margin */
+    list-style: none;           /* Remove default list styling */
+}
+
+.blue-box {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;        /* Prevent line breaks */
+    flex-shrink: 0;             /* Prevent shrinking of boxes */
+}
+
+.blue-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.blue-box a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-decoration: none;
+}
                         </style>
                         <li class="blue-box">
                             <a href="https://github.com/{{ site.author.github_username }}" target="blank">
