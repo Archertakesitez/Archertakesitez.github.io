@@ -30,44 +30,53 @@
                 <h2><span>{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                     <ul>
                         <style>
-.blue-box {
-    display: inline-block; /* Ensures the box adjusts to content width but doesn’t stretch too thin */
-    min-width: 200px; /* Sets a minimum width for the box to avoid it becoming too narrow */
-    margin: 5px auto; /* Centers the box and adds spacing */
-    padding: 10px 15px; /* Adds space inside the box */
-    background-color: #007BFF; /* Blue background for the box */
-    border-radius: 5px; /* Rounded corners for the box */
-    text-align: center; /* Centers the text inside the box */
-    white-space: normal; /* Allows text to wrap neatly within the box */
-}
+                            /* General blue-box styling */
+                        .blue-box {
+                            display: inline-block;
+                            margin: 5px;
+                            padding: 10px 15px;
+                            background-color: #007BFF;
+                            border-radius: 5px;
+                            text-align: center;
+                            white-space: nowrap; /* Prevents text wrapping inside the box */
+                        }
 
-/* Link styling inside the blue-box */
-.blue-box a {
-    text-decoration: none; /* Removes underline from links */
-    color: white; /* White text */
-    font-size: 16px; /* Ensures readable font size */
-    font-weight: bold; /* Bold text for emphasis */
-}
+                        /* Link styling inside the blue-box */
+                        .blue-box a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
 
-/* Hover effect */
-.blue-box a:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-    text-decoration: none;
-}
+                        /* Hover effect */
+                        .blue-box a:hover {
+                            background-color: #0056b3;
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .blue-box {
-        width: auto; /* Allows the box to size based on content */
-        min-width: 250px; /* Ensures the box doesn’t get narrower than 250px */
-        padding: 12px 18px; /* Slightly increase padding for readability */
-    }
+                        /* Flexbox container for blue boxes */
+                        .team-member ul {
+                            display: flex;
+                            flex-wrap: wrap; /* Allows boxes to wrap to the next row on smaller screens */
+                            justify-content: center; /* Centers the boxes */
+                            padding: 0;
+                            list-style-type: none; /* Removes default list styling */
+                        }
 
-    .blue-box a {
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
-}
+                        /* Responsive design for smaller screens */
+                        @media (max-width: 768px) {
+                            .blue-box {
+                                width: 100%; /* Each box takes the full width of the container */
+                                padding: 10px; /* Adjust padding for smaller screens */
+                                margin: 5px 0; /* Add vertical spacing between boxes */
+                            }
+
+                            .blue-box a {
+                                font-size: 14px; /* Reduce font size for better fit */
+                            }
+                        }
                         </style>
                         <li class="blue-box">
                             <a href="https://github.com/{{ site.author.github_username }}" target="blank">
