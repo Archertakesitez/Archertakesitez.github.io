@@ -7,54 +7,37 @@
     </div>
     <div class="row features-block">
         <div class="wow zoomIn col-lg-6 col-lg-offset-3">
-            <canvas id="{{ site.data.index.skills.id | default: 'skills-chart' }}" style="max-width: 100%; height: auto;"></canvas>
+            <canvas id="{{ site.data.index.skills.id }}" height="500" width="500"></canvas>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Ensure Chart.js is loaded -->
-    <script>
-        // Get the canvas element
-        var ctx = document.getElementById("{{ site.data.index.skills.id | default: 'skills-chart' }}");
-
-        // Prepare the data
+        <div class="col-lg-1"></div>
+        <script>
+        var ctx = document.getElementById("{{ site.data.index.skills.id }}");
         var data = {
-            labels: "{{ site.data.index.skills.aspects | default: 'Skill1,Skill2,Skill3' }}".split(","),
+            labels: "{{ site.data.index.skills.aspects }}".split(","),
             datasets: [{
-                label: "{{ site.data.index.skills.label | default: 'My Skills' }}",
+                label: "{{ site.data.index.skills.label }}",
                 backgroundColor: "rgba(179,181,198,0.2)",
                 borderColor: "#3385FF",
                 pointBackgroundColor: "#3385FF",
                 pointBorderColor: "#fff",
                 pointHoverBackgroundColor: "#3385FF",
                 pointHoverBorderColor: "#3385FF",
-                data: [{{ site.data.index.skills.percentage | default: '90,80,70' }}]
-            }]
+                data: [{{ site.data.index.skills.percentage }}]
+                }]
         };
-
-        // Configure and render the radar chart
         var myRadarChart = new Chart(ctx, {
             type: 'radar',
             data: data,
             options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                layout: {
-                    padding: { top: 20, bottom: 20, left: 20, right: 20 }
-                },
                 scale: {
-                    ticks: {
-                        min: 0,
-                        max: 100,
-                        stepSize: 20,
-                        font: { size: 12 }
-                    },
-                    pointLabels: {
-                        font: { size: 12 }
-                    }
+                    responsive: true,
+                    ticks: {min: 0, max: 100},
+                    lineArc: false,
+                    pointLabels: {fontSize: 14},
                 },
-                plugins: {
-                    legend: { display: false }
-                }
+                legend: {display: false},
             }
         });
-    </script>
+        </script>
+    </div>
 </div>
