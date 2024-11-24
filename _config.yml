@@ -24,8 +24,8 @@ author:  # change following line to your infomation.
     - name: icon-apache
     - name: fa-linux
   skill_icon2:
-    - name: fa-linux
-    - name: icon-apache
+    - name: fa-python
+    - name: fa-coffee
   desc: Hi there — this is Erchi Zhang, and you can call me Archer. I am pursuing an M.S. in Data Science at New York University, with an expected graduation date of May 2025. I have a strong foundation in programming languages like Python, Java, R, SQL, HTML/CSS, and JavaScript, and I have experience working with data structures as well as algorithms during coursework, academic projects, research papers, and internships. I am also an enthusiast in Machine Learning and Deep Learning. I am actively seeking 2025 new grad opportunities in data science, software development engineering, machine learning, data analysis, or any relevant field.
 # Describe yourself.
 
