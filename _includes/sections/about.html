@@ -30,24 +30,23 @@
                 <h2><span>{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                     <ul>
                         <style>
-/* General blue-box styling */
 .blue-box {
-    display: block; /* Makes the boxes take the full width of their container */
-    margin: 5px auto; /* Centers the boxes horizontally and adds spacing between them */
+    display: inline-block; /* Ensures the box adjusts to content width but doesn’t stretch too thin */
+    min-width: 200px; /* Sets a minimum width for the box to avoid it becoming too narrow */
+    margin: 5px auto; /* Centers the box and adds spacing */
     padding: 10px 15px; /* Adds space inside the box */
     background-color: #007BFF; /* Blue background for the box */
-    border-radius: 5px; /* Optional: Rounded corners for the box */
+    border-radius: 5px; /* Rounded corners for the box */
     text-align: center; /* Centers the text inside the box */
-    white-space: normal; /* Allows text to wrap within the box */
+    white-space: normal; /* Allows text to wrap neatly within the box */
 }
 
 /* Link styling inside the blue-box */
 .blue-box a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none; /* Removes underline from links */
     color: white; /* White text */
-    font-size: 16px; /* Adjust font size for better readability */
+    font-size: 16px; /* Ensures readable font size */
     font-weight: bold; /* Bold text for emphasis */
-    word-wrap: break-word; /* Break long words if necessary */
 }
 
 /* Hover effect */
@@ -60,12 +59,13 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
     .blue-box {
-        width: 90%; /* Make the box take up 90% of the screen width */
-        padding: 15px; /* Increase padding for better readability */
+        width: auto; /* Allows the box to size based on content */
+        min-width: 250px; /* Ensures the box doesn’t get narrower than 250px */
+        padding: 12px 18px; /* Slightly increase padding for readability */
     }
 
     .blue-box a {
-        font-size: 14px; /* Slightly reduce font size for better fit */
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 }
                         </style>
