@@ -12,7 +12,7 @@ author:  # change following line to your infomation.
   name: Erchi(Archer) Zhang  # Be used at blog posts' author.
   first_name: Erchi(Archer)  # Be used at index page about me section.
   last_name: Zhang  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/avatar2.jpg  # upload your avatar at directory and edit it.
   github_username: Archertakesitez  # Leave blank if you don't have now
   linkedin_id: erchi-zhang-0867041b8 # Leave blank if you don't have now
   email: ez806@nyu.edu
