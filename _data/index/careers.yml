@@ -11,7 +11,7 @@
     - Built a website leveraging FastAPI that employs LLMs to translate plain texts into user-defined JSON schemas
     i18n: company_a_desc
   date:
-    detail: Jun. 2024 – Present
+    detail: Jun. 2024 – Dec. 2024
     i18n: company_a_date
   place:
     detail: San Francisco, CA (remote)
